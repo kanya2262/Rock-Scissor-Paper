@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h1 {
+    background-color: #081b31;
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.choice {
+    height: 165px;
+    width: 165px;
+}
+
+.choice:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 1rem;
+}
+
+.score-bord {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 5rem;
+    gap: 5rem;
+}
+
+#user-score,
+#computer-score {
+    font-size: 4rem;
+}
+
+
+#user-score {
+    color: #4CAF50;
+    /* Green */
+}
+
+#computer-score {
+    color: #f44336;
+    /* Red */
+}
+
+
+.msg-container {
+    margin-top: 5rem;
+}
+
+#action-message {
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2rem;
+    display: inline;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+
+#player-name {
+    font-size: 20px;
+    color: #4CAF50;
+    /* Green */
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Style for input field */
+#player-name-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Style for button */
+#start-game {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#start-game:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+
+#reset-game {
+    padding: 10px 20px;
+    background-color: #ab2209;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+
+#reset-game:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #dc0f0f;
+}
+
+
+#action-message.game-draw {
+    background-color: orange;
+    /* Set the background color to yellow */
+
+}
+
+#action-message.game-lose {
+    background-color: red;
+    /* Set the background color to yellow */
+}
+
+#action-message.game-win {
+    background-color: green;
+    /* Set the background color to yellow */
+}
+
+/* Style for input field with error class */
+#player-name-input.error {
+    border: 2px solid red;
+    animation: shake 0.5s linear;
+}
+
+#action-message.game-over {
+    background-color: blue;
+    animation: shake 2s linear;
+
+}
+
+/* Define the shake animation */
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    75% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
